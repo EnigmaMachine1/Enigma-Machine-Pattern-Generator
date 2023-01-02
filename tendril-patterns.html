@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendril</title>
+    <link rel="icon" href="Images/small-logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="weather.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="Images/small-logo.jpg" alt="small logo" class="sml-logo">
+        <h1 class="title">The Enigma Machine</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="instructions.html">Instructions</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="machine.html">The Machine</a></li>
+            </ul>
+        </nav>
+        <div class="weather-container">
+            <p class="temperature"></p>
+            <img src="" alt="" class="weather-icon hide">
+            <p class="humidity"></p>
+            <p class="weather"></p>
+        </div>
+    </header>
+    <main>
+        <h1>How to Use:</h1>
+        <p>The second number of the tendril pattern is always the pattern of tendril that you will have to draw. So I will list those patterns below.</p>
+        <h1>Tendril Patterns:</h1>
+        <p>Each line pattern is listed from left right (.1 being left most)</p>
+        <div class="pattern-cont">
+            <h3>1. Straight</h3>
+            <span>
+                <img src="Images/Tendril Pattern/Pattern 1/1.1.jpg" alt="Straight 1">
+                <img src="Images/Tendril Pattern/Pattern 1/1.2.jpg" alt="Straight 2">
+                <img src="Images/Tendril Pattern/Pattern 1/1.3.jpg" alt="Straight 3">
+            </span>
+        </div>
+        <div class="pattern-cont">
+            <h3>2. Curved</h3>
+            <span>
+                <img src="Images/Tendril Pattern/Pattern 2/2.1.jpg" alt="Curved 1">
+                <img src="Images/Tendril Pattern/Pattern 2/2.2.jpg" alt="Curved 2">
+                <img src="Images/Tendril Pattern/Pattern 2/2.3.jpg" alt="Curved 3">
+            </span>
+        </div>
+        <div class="pattern-cont">
+            <h3>3. Centered</h3>
+            <span>
+                <img src="Images/Tendril Pattern/Pattern 3/3.1.jpg" alt="Centered 1">
+                <img src="Images/Tendril Pattern/Pattern 3/3.2.jpg" alt="Centered 2">
+                <img src="Images/Tendril Pattern/Pattern 3/3.3.jpg" alt="Centered 3">
+                <img src="Images/Tendril Pattern/Pattern 3/3.4.jpg" alt="Centered 4">
+                <img src="Images/Tendril Pattern/Pattern 3/3.5.jpg" alt="Centered 5">
+            </span>
+        </div>
+        <p>
+            If your pattern roll started with a 3, the next number determines if your pattern is in the shape of a plus sign or an X. 
+            If it is a 1, it will be in the shape of a +, if it is a 2 it will be in the shape of an X.
+        </p>
+        <p>
+            The third number for patterns 1 and 2, and fourth for pattern 3 is the number that determines whether there will be a pattern 
+            inside the tendrils or not. If this number is a 1, the tendrils will be white like they are in the pattern pictures. If it is a 2, 
+            then the following number will be a pattern to fill the tendrils with. This is a line pattern, so use the line patterns from the code 1 are for reference.
+        </p>
+        <p>
+            After either the 1, or the pattern, there will be another number. This number represents what to do with the background. If it is a 1, 
+            the background will be black. If it is a two, the use the following pattern number from the line patterns to determine which pattern to 
+            fill in the background with. If it is a 3, the background will be an entire pattern. The pattern will be in the parentheses following the 3.
+        </p>
+    </main>
+    <footer>
+        <p class="font-sm">&copy;2022 The Enigma Machine Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

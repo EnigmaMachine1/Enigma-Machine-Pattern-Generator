@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions</title>
+    <link rel="icon" href="Images/small-logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="carousel.js" defer></script>
+    <script src="weather.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="Images/small-logo.jpg" alt="small logo" class="sml-logo">
+        <h1 class="title">The Enigma Machine</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="instructions.html">Instructions</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="machine.html">The Machine</a></li>
+            </ul>
+        </nav>
+        <div class="weather-container">
+            <p class="temperature"></p>
+            <img src="" alt="" class="weather-icon hide">
+            <p class="humidity"></p>
+            <p class="weather"></p>
+        </div>
+    </header>
+    <main>
+        <h4>Instructions:</h4>
+        <p>Click through the images using the arrows or the navigation dots to see a link to an expliantion for each pattern and an example</p>
+        <div class="pattern-div">
+            <ul class="patterns">
+                <p><a class="pattern-list" href="line-patterns.html">1. Lines</a></p> 
+            </ul>
+        </div>
+        <div class="carousel-container">
+            <button class="carousel-btn left"><i class="fa-solid fa-chevron-left"></i></button>
+            <ul class="carousel">
+                <li class="carousel-item active"><img src="Images/Line Pattern/line-examp-2.jpg" alt="Lines"></li>
+                <li class="carousel-item"><img src="Images/shape-examp-1.png" alt="Shapes"></li>
+                <li class="carousel-item"><img src="Images/Edging Pattern/stops-13.jpg" alt="Edgings"></li>
+                <li class="carousel-item"><img src="Images/tendril-examp-1.jpg" alt="Tendrils"></li>
+                <li class="carousel-item"><img src="Images/Tower Pattern/tower-examp-3.png" alt="Tendrils"></li>
+                <li class="carousel-item"><img src="Images/Uncategorized Patterns/Temple/1.png" alt="Towers"></li>
+            </ul>
+            <button class="carousel-btn right"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-nav">
+                <div class="nav-item active"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="font-sm">&copy;2022 The Enigma Machine Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

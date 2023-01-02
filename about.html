@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>  
+    <link rel="icon" href="Images/small-logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="weather.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="Images/small-logo.jpg" alt="small logo" class="sml-logo">
+        <h1 class="title">The Enigma Machine</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instructions.html">Instructions</a></li>
+                <li class="current"><a href="about.html">About</a></li>
+                <li><a href="machine.html">The Machine</a></li>
+            </ul>
+        </nav>
+        <div class="weather-container">
+            <p class="temperature"></p>
+            <img src="" alt="" class="weather-icon hide">
+            <p class="humidity"></p>
+            <p class="weather"></p>
+        </div>
+    </header>
+    <main>
+        <h2>How It Works</h2>
+        <p>The Engima Machine will first begin by selecting an initial starting pattern. Once this starting pattern has been selected, the machine will begin generate random numbers that represent what is to be drawn within the empty spaces created by the inital pattern. Each starting pattern has its own unique system that details how many times the pattern should be repeated and how the initial pattern should be drawn. For more instructions on how to read the code for each pattern, visit the <a href="instructions.html">Instructions page</a> for each pattern.</p>
+        <h2>Purpose</h2>
+        <p>This system of code generation is intended to serve as an aid to artists looking to draw in zentagle-like style either as inspiration or to overcome artists block by randomly generating designs and patterns in that style to later incorporate into art pieces. While this lacks the ability to be a completely design new art pieces, each pattern can be used in a piece to create one large art piece from the patterns provided by The Enigma Machine.</p>
+        <h2>Example Pieces:</h2>
+        <img src="Images/line-examp-3.png" alt="examp-1" class="examp2">
+        <img src="Images/shape-examp-1.png" alt="examp-2" class="examp2">
+        <img src="Images/tendril-examp-1.jpg" alt="examp-3" class="examp2">
+    </main>
+    <footer>
+        <p class="font-sm">&copy;2022 The Enigma Machine Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

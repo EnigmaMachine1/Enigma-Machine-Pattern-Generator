@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Enigma Machine</title>
+    <link rel="icon" href="Images/small-logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="generation.js" defer></script>
+    <script src="weather.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="Images/small-logo.jpg" alt="small logo" class="sml-logo">
+        <h1 class="title">The Enigma Machine</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instructions.html">Instructions</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="current"><a href="machine.html">The Machine</a></li>
+            </ul>
+        </nav>
+        <div class="weather-container">
+            <p class="temperature"></p>
+            <img src="" alt="" class="weather-icon hide">
+            <p class="humidity"></p>
+            <p class="weather"></p>
+        </div>
+    </header>
+    <div>
+        <button class="gen-btn pageButton">Generate</button>
+    </div>
+    <main class="hide">
+        <div class="code-container">
+            <h4>Code 1:</h4>
+            <h3 class="code"></h3>
+        </div>
+        <div class="code-container">
+            <h4>Code 2:</h4>
+            <h3 class="code"></h3>
+        </div>
+        <div class="code-container">
+            <h4>Code 3:</h4>
+            <h3 class="code"></h3>
+        </div>
+    </main>
+    <footer>
+        <p class="font-sm">&copy;2022 The Enigma Machine Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

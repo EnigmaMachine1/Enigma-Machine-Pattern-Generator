@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower</title>
+    <link rel="icon" href="Images/small-logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="weather.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="Images/small-logo.jpg" alt="small logo" class="sml-logo">
+        <h1 class="title">The Enigma Machine</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="instructions.html">Instructions</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="machine.html">The Machine</a></li>
+            </ul>
+        </nav>
+        <div class="weather-container">
+            <p class="temperature"></p>
+            <img src="" alt="" class="weather-icon hide">
+            <p class="humidity"></p>
+            <p class="weather"></p>
+        </div>
+    </header>
+    <main>
+        <h1>How to Use:</h1>
+        <p>
+            The first number of the Towers pattern represents the direction the towers will point in. Note: if your second number is 2, 
+            just follow the direction and draw the second tower group directly opposite, pointing towards the tops of the first tower group.
+        </p>
+        <p>The first number represents where the top of the towers is pointing. Interpret the first number as follows:</p>
+        <img src="Images/Tower Pattern/tower-directions.png" alt="tower-directions" class="examp3">
+        <p>The next number represents the type of tower pattern you will be drawing. 1 is a single group of towers like this:</p>
+        <p>(5-7-1-3(4-2.2-1-1))</p>
+        <img src="Images/Tower Pattern/tower-examp-1.png" alt="tower-examp-1" class="examp3">
+        <p>2 is two groups of opposing towers like this:</p>
+        <p>(5-3-2-3(4-2.2-1-1))</p>
+        <img src="Images/Tower Pattern/tower-examp-2.png" alt="tower-examp-2" class="examp3">
+        <p>3 is towers branching out in a direction from one another like this:</p>
+        <p>(5-1-3-1)</p>
+        <img src="Images/Tower Pattern/tower-examp-3.png" alt="tower-examp-3" class="examp3">
+        <p>
+            As you can see in the examples above, just like tendrils the later number represent patterns to fill in the background with. If you 
+            rolled a 5-x-1 or 5-x-2, if the next number is a 1, you fill in the background black. If the next number is a 2, there will be a 
+            line pattern code to follow after the 2. If the next number is a 3, you will have an entire pattern in parentheses to fill the rest of the section with. 
+        </p>
+        <p>
+            If you rolled a code that starts with 5-x-3, the next number will be either a 1 or a 2. If it is a 1, the background will be black, 
+            if it is a 2 the background will be the following line pattern number.
+        </p>
+    </main>
+    <footer>
+        <p class="font-sm">&copy;2022 The Enigma Machine Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

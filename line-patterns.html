@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lines</title>
+    <link rel="icon" href="Images/small-logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="weather.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="Images/small-logo.jpg" alt="small logo" class="sml-logo">
+        <h1 class="title">The Enigma Machine</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="instructions.html">Instructions</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="machine.html">The Machine</a></li>
+            </ul>
+        </nav>
+        <div class="weather-container">
+            <p class="temperature"></p>
+            <img src="" alt="" class="weather-icon hide">
+            <p class="humidity"></p>
+            <p class="weather"></p>
+        </div>
+    </header>
+    <main>
+        <h1>How to Use:</h1>
+        <p>
+            The lines category is the simplest of them. You simply divide the area into evenly spaced lines, and then fill lines 
+            with certain patterns generated. The first number of a lines code is 1. The second number of the lines code represents 
+            the direction and type of the lines that will be used to fill the space. Imagine each of these squares are the space 
+            you are supposed to fill, and here is an example of what the second number means for how you draw your lines in the space.
+        </p>
+        <img src="Images//Line Pattern/line-examp-1.jpg" alt="line-examp-1" class="examp">
+        <p>
+            The third number of the lines code represents how many patterns will be repeated in sequence to fill the lines. It can be 
+            anywhere from 2-6 repeating patterns. Basically, if you had a 3 here, you would have 3 different patterns that you would 
+            use to fill the space in between the lines in sequence repeatedly, like so:
+        </p>
+        <img src="Images/Line Pattern/line-examp-2.jpg" alt="line-examp-2" class="examp">
+        <p>
+            All of the next numbers with the little decimals next to them are the patterns that you will use to fill in the spaces. 
+            Below there is a list of the patterns that can be rolled, as well as an example of an actual code and its result. Note 
+            that 10.3 and 10.4 have a P denoting an empty space in the pattern. This empty space with a P means to roll a new pattern 
+            for that empty space. Don't worry, the generator shouldn't be able to generate another 10 for that pattern. When this happens, 
+            there will be a slash followed by the pattern to fill in here. For example, 10.3/1.2 would mean filling in the empty space in 
+            the 10.3 pattern with pattern 1.2. For an example of a line pattern, here is a pattern for the code 1-1-3-10.3/8.1-3.4-1.2:
+        </p>
+        <img src="Images/line-examp-3.png" alt="line-examp-3" class="examp">
+        <h1>Line Patterns:</h1>
+        <p>Each line pattern is listed from left right (.1 being left most)</p>
+        <div class="pattern-cont">
+            <h3>1. Dots</h3>
+            <span>
+                <img src="Images/Line Pattern/Pattern-1/1.1.png" alt="Dots 1">
+                <img src="Images/Line Pattern/Pattern-1/1.2.png" alt="Dots 2">
+                <img src="Images/Line Pattern/Pattern-1/1.3.png" alt="Dots 3">
+            </span>
+        </div>
+        <div class="pattern-cont">
+            <h3>2. Solid</h3>
+            <span>
+                <img src="Images/Line Pattern/Pattern-2/2.1.png" alt="Solid 1">
+            </span>
+        </div>
+        <div class="pattern-cont">
+            <h3>3. Hatching</h3>
+            <span>
+                <img src="Images/Line Pattern/Pattern-3/3.1.png" alt="Hatching 1">
+                <img src="Images/Line Pattern/Pattern-3/3.2.png" alt="Hatching 2">
+                <img src="Images/Line Pattern/Pattern-3/3.3.png" alt="Hatching 3">
+                <img src="Images/Line Pattern/Pattern-3/3.4.png" alt="Hatching 4">
+            </span>
+        </div>
+        <div class="pattern-cont">
+            <h3>4. Alternating Dots</h3>
+            <span>
+                <img src="Images/Line Pattern/Pattern-4/4.1.png" alt="Alt Dots 1">
+                <img src="Images/Line Pattern/Pattern-4/4.2.png" alt="Alt Dots 2">
+                <img src="Images/Line Pattern/Pattern-4/4.3.png" alt="Alt Dots 3">
+            </span>
+        </div>
+        <div class="pattern-cont">
+            <h3>5. Stitching</h3>
+            <span>
+                <img src="Images/Line Pattern/Pattern-5/5.1.png" alt="Stitching 1">
+                <img src="Images/Line Pattern/Pattern-5/5.2.png" alt="Stitching 2">
+            </span>
+        </div>
+        <div class="pattern-cont">
+            <h3>6. Cross Hatching</h3>
+            <span>
+                <img src="Images/Line Pattern/Pattern-6/6.1.png" alt="Cross Hatching 1">
+                <img src="Images/Line Pattern/Pattern-6/6.2.png" alt="Cross Hatching 2">
+                <img src="Images/Line Pattern/Pattern-6/6.3.png" alt="Cross Hatching 3">
+                <img src="Images/Line Pattern/Pattern-6/6.4.png" alt="Cross Hatching 4">
+                <img src="Images/Line Pattern/Pattern-6/6.5.png" alt="Cross Hatching 5">
+                <img src="Images/Line Pattern/Pattern-6/6.6.png" alt="Cross Hatching 6">
+                <img src="Images/Line Pattern/Pattern-6/6.7.png" alt="Cross Hatching 7">
+                <img src="Images/Line Pattern/Pattern-6/6.8.png" alt="Cross Hatching 8">
+            </span>
+        </div>
+        <div class="pattern-cont">
+            <h3>7. Checkerboard</h3>
+            <span>
+                <img src="Images/Line Pattern/Pattern-7/7.1.png" alt="Checkerboard 1">
+                <img src="Images/Line Pattern/Pattern-7/7.2.png" alt="Checkerboard 2">
+            </span>
+        </div>
+        <div class="pattern-cont">
+            <h3>8. Pebbles</h3>
+            <span>
+                <img src="Images/Line Pattern/Pattern-8/8.1.png" alt="Pebbles 1">
+                <img src="Images/Line Pattern/Pattern-8/8.2.png" alt="Pebbles 2">
+            </span>
+        </div>
+        <div class="pattern-cont">
+            <h3>9. Waves</h3>
+            <span>
+                <img src="Images/Line Pattern/Pattern-9/9.1.png" alt="Waves 1">
+                <img src="Images/Line Pattern/Pattern-9/9.2.png" alt="Waves 2">
+                <img src="Images/Line Pattern/Pattern-9/9.3.png" alt="Waves 3">
+                <img src="Images/Line Pattern/Pattern-9/9.4.png" alt="Waves 4">
+                <img src="Images/Line Pattern/Pattern-9/9.5.png" alt="Waves 5">
+                <img src="Images/Line Pattern/Pattern-9/9.6.png" alt="Waves 6">
+            </span>
+        </div>
+        <div class="pattern-cont">
+            <h3>10. Splits</h3>
+            <span>
+                <img src="Images/Line Pattern/Pattern-10/10.1.png" alt="Splits 1">
+                <img src="Images/Line Pattern/Pattern-10/10.2.png" alt="Splits 2">
+                <img src="Images/Line Pattern/Pattern-10/10.3.png" alt="Splits 3">
+                <img src="Images/Line Pattern/Pattern-10/10.4.png" alt="Splits 4">
+            </span>
+        </div>
+    </main>
+    <footer>
+        <p class="font-sm">&copy;2022 The Enigma Machine Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

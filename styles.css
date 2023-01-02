@@ -1,0 +1,403 @@
+/*  -------------General Styles------------- */
+*{margin:0;}
+*{padding:0;}
+*{box-sizing: border-box;}
+:root{--content-height: 0px;}
+
+
+/* -------------Header Styles------------- */
+header{
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+
+.title{
+    background-color: #333;
+    color: white;
+}
+
+h1{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h2{
+    margin-top: 10px;
+}
+
+.weather-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    padding-right: 1rem;
+    gap: 1rem;
+}
+
+.weather-icon{
+    max-height: 40px;
+    max-width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.temperature{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.humidity{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.weather{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+/* -------------Nav Styles------------- */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+    background-color: #333;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #333;
+}
+  
+nav li a:hover {
+    background-color: #111;
+}
+
+.current{
+    border-bottom: 4px solid white;
+}
+/* -------------Content Styles------------- */
+body{
+    background-color: lightblue;
+}
+
+main{
+    padding-bottom: 20px;
+}
+
+p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.code-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 150px;
+    opacity: 1;
+}
+
+.fade{
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* -------------Carousel Styles------------- */
+.carousel-container{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel{
+    list-style-type: none;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.carousel-item{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 300ms opacity ease-in-out;
+    transition-delay: 300ms;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel-item.active{
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0;
+    
+}
+
+.carousel-item > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.carousel-btn{
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: black;
+    position: absolute;
+    top: 50%;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.carousel-btn.left{
+    left: -2.2rem;
+}
+
+.carousel-btn.right{
+    right: -2.2rem;
+}
+
+.carousel-btn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.carousel-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    gap: 0.5rem;
+    opacity: 0.3;
+}
+
+.nav-item{
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.3;
+    transition: 200ms opacity ease;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+}
+
+.nav-item.active{
+    opacity: 0.7;
+}
+
+/* -------------Accordion Styles------------- */
+.accordion {
+    width: 80%;
+    margin: 1rem auto;
+    line-height: 1.5;
+}
+
+.accordion-label {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1rem 0.5rem;
+    text-align: left;
+    background-color: #111;
+    opacity: 0.7;
+    border: none;
+    color: white;
+    position: relative;
+    transition: 0.5s opacity ease-out;
+}
+
+.accordion-content {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s height ease-in-out;
+}
+
+.accordion-content.open{
+    height: var(--content-height);
+    overflow: hidden;
+    border-left: dashed 2px #333;
+    border-right: dashed 2px #333;
+    border-bottom: dashed 2px #333;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.accordion-label.open{
+    opacity: 1;
+}
+
+.accordion-label::after{
+    content: '+';
+    position: absolute;
+    right: 1rem;
+    font-size: 1.2rem;
+}
+
+.accordion-label.open::after{
+    content: '-';
+    font-size: 1.5rem;
+}
+
+/* -------------Image Styles------------- */
+img{
+    width: 100px;
+    height: 160px;
+}
+
+.logo1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 5%;
+    height: auto;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+.sml-logo{
+    display: inline-block;
+    width: 40px;
+    vertical-align: middle;
+    height: 40px;
+}
+
+.examp{
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+}
+
+.examp2{
+    padding-top: 10px;
+    display: inline block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+    height: 33%;
+}
+
+.examp3{
+    padding-top: 10px;
+    display: inline-block;
+    width: 175px;
+    height: 200px;
+}
+
+/* -------------Button Styles------------- */
+.pageButton{
+    color: white;
+    background-color: #45ACCC;
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    text-align: center;
+    width: 49.7%;
+}
+
+.gen-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.pageButton:hover{
+    background-color: #3C869D;
+}
+
+.machine-btn{
+    width: 100%;
+}
+.examp-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -------------Pattern Page Styles------------- */
+
+.pattern-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h3{
+    font-size: 40px;
+}
+
+h4{
+    font-size: 30px;
+}
+
+.pattern-list{
+    list-style-type: upper-roman;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.patterns{
+    display: inline-block;
+    text-align: left;
+}
+
+.pattern-div{
+    text-align: center;
+}
+
+/* -------------Footer Styles------------- */
+.font-sm{
+    font-size: 0.8rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 1rem;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+}
+
+/* -------------Hide Style------------- */
+.hide{
+    display: none;;
+}
